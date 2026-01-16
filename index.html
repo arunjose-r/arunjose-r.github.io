@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arun's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="final_design">
 
+    <!-- NAVBAR -->
     <nav class="navbar">
       <div class="container">
         <div class="nav-links">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">Experience</a>
-          <a href="#" class="nav-link">About me</a>
-          <a href="#" class="nav-link">Research</a>
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#about" class="nav-link">About me</a>
+          <a href="#research" class="nav-link">Research</a>
         </div>
 
-        <div class="button contact-button">
-          <a href="#" class="nav-link">Download CV</a>
-        </div>
+        <a href="assets/Arun_CV.pdf" class="contact-button" download>Download CV</a>
       </div>
     </nav>
 
-    <header class="hero">
+    <!-- HERO -->
+    <header class="hero" id="home">
       <div class="hero_content">
         <h1>Hey, I am Arun</h1>
-        <p class="hero-message">Driving 
-        <span class="highlight">sustainable energy innovation</span> through lithium-ion battery intelligence
+
+        <p class="hero-message">
+          Driving
+          <span class="highlight">sustainable energy innovation</span>
+          through lithium-ion battery intelligence
         </p>
+
         <p class="hero-experience">
-          Assistant Professor (Junior) <br>
-          @ Vellore Institute of Technology (VIT) <br>
+          Assistant Professor (Junior) <br />
+          @ Vellore Institute of Technology (VIT) <br />
           Research in Battery Management, SoC, SoH, and Sustainable Systems
         </p>
       </div>
 
-      <img src="assets/dep_2.png" alt="Hero Image" class="hero-image">
+      <img src="assets/dep_2.png" alt="Arun portrait" class="hero-image" />
     </header>
 
-    <section class="experience-section">
+    <!-- EXPERIENCE -->
+    <section class="experience-section" id="experience">
       <div class="experience_tiles">
         <div class="experience_contents">
           <h2>Experience</h2>
@@ -75,17 +80,24 @@
       </div>
     </section>
 
-    <img src="assets/timeline.png" alt="Divider" class="divider-image">
+    <!-- DIVIDER -->
+    <img src="assets/timeline.png" alt="Timeline divider" class="divider-image" />
 
-    <section class="education-section">
+    <!-- EDUCATION (FIXED) -->
+    <section class="education-section" id="education">
       <div class="education_text">
         <h2>Education</h2>
       </div>
-      <img src="assets/education.png" alt="Education Image" class="education-image">
+
+      <div class="education_images">
+        <img src="assets/education.png" alt="Education 1" class="education-image" />
+        <img src="assets/education_2.png" alt="Education 2" class="education-image" />
+      </div>
     </section>
 
-    <section class="about-section">
-      <img src="assets/deep_3.png" alt="About Me Image" class="about-me-image">
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <img src="assets/deep_3.png" alt="About me" class="about-me-image" />
 
       <div class="about_content">
         <div class="me">
@@ -110,80 +122,108 @@
       </div>
     </section>
 
-    <section class="research-publications-section">
+    <!-- RESEARCH -->
+    <section class="research-publications-section" id="research">
       <div class="research_content">
         <h2>Research Publications</h2>
       </div>
 
       <div class="publications-grid">
-        <div class="publication-card">
-          <img src="assets/cut_2.png" alt="Publication Image 1">
+
+        <article class="publication-card">
+          <img src="assets/cut_2.png" alt="Publication 1" />
           <div class="pub-text">
             <h3>
               A comprehensive review of digital twin applications in electric vehicles:
               Evolution, classification, and future directions towards Industry 5.0
             </h3>
             <p class="journal">
-              Results in Engineering – Q1<br>
+              Results in Engineering – Q1<br />
               Impact Factor – 7.9
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="publication-card">
-          <img src="assets/cut_3.png" alt="Publication Image 2">
+        <article class="publication-card">
+          <img src="assets/cut_3.png" alt="Publication 2" />
           <div class="pub-text">
             <h3>
               The advancements and research trends in state of charge estimation for
               lithium-ion batteries over the last two decades
             </h3>
             <p class="journal">
-              Journal of Energy Storage – Q1<br>
+              Journal of Energy Storage – Q1<br />
               Impact Factor – 9.8
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="publication-card">
-          <img src="assets/cut_1.png" alt="Publication Image 3">
+        <article class="publication-card">
+          <img src="assets/cut_1.png" alt="Publication 3" />
           <div class="pub-text">
             <h3>
               An analytical examination of the performance assessment of CNN-LSTM
               architectures for state-of-health evaluation
             </h3>
             <p class="journal">
-              Results in Engineering – Q1<br>
+              Results in Engineering – Q1<br />
               Impact Factor – 7.9
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="publication-card">
-          <img src="assets/cut_5.png" alt="Publication Image 4">
+        <article class="publication-card">
+          <img src="assets/cut_5.png" alt="Publication 4" />
           <div class="pub-text">
             <h3>
               The advancements and research trends in state of health estimation for
               lithium-ion batteries over the last two decades
             </h3>
             <p class="journal">
-              Sustainable Futures – Q1<br>
+              Sustainable Futures – Q1<br />
               Impact Factor – 4.9
             </p>
           </div>
-        </div>
+        </article>
 
-        <div class="publication-card">
-          <img src="assets/cut_4.png" alt="Publication Image 5">
+        <article class="publication-card">
+          <img src="assets/cut_4.png" alt="Publication 5" />
           <div class="pub-text">
             <h3>
               Evolution of Electrical Vehicles, Battery state Estimation, and Future Research Directions: A Critical Review
             </h3>
             <p class="journal">
-              IEEE Access – Q1<br>
+              IEEE Access – Q1<br />
               Impact Factor – 3.6
             </p>
           </div>
-        </div>
+        </article>
+
+        <article class="publication-card">
+          <img src="assets/cut_7.png" alt="Publication 5" />
+          <div class="pub-text">
+            <h3>
+              An Thorough Examination of Superior Battery Management Systems for Diverse Applications
+            </h3>
+            <p class="journal">
+              ICSPCRE-IEEE <br />
+            </p>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <img src="assets/cut_6.png" alt="Publication 5" />
+          <div class="pub-text">
+            <h3>
+              Gantry robot system for preventing drowning accidents in swimming pools
+            </h3>
+            <p class="journal">
+              Materials today: proceedings<br />
+              Elsevier
+            </p>
+          </div>
+        </article>
+
       </div>
     </section>
 
